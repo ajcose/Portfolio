@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 24px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a class="logo">Alec Cose Senior Portfolio</a>
+  <div class="header-right">
+    <a href="#about">About</a>
+    <a href="#design">Senior Design</a>
+    <a href="#projects">Projects</a>
+    <a href="#work">Internship</a>
+    <a href="#reflections">Reflections</a>
+    <a href="#ethics">Ethics</a>
+    <a href="#resume">Resume</a>
+  </div>
+</div>
+<center>
+<div style="padding-left: 15%; padding-right:15%" id="about">
+  <h1>Alec Cose
+    <div style="font-size:20px">aleccose@gmail.com --- (515)802-9866</div>
+  </h1>
+  <p>I am a senior here at Iowa State studying Cyber Security Engineering with the current plan of completing my degree and graduating in May 2024. I am from Waukee, IA and some of my favorite pastimes are playing games, like CS2, and attending ISU basketball games.</p>
+  <p>Career Objective: As I finish my journey here at Iowa State and look forward to my career I am focusing on finding a job somewhere in cyber security.<br>
+  My current plan is to continue searching for a job as a Cyber Security Analyst in Des Moines, as my internship required my to work with people in that position<br>
+  and it gained my interest and became my primary focus for my near future.</p>
+</div>
+
+<div id="design" style="padding-left:15%; padding-right:15%">
+    <h1>Senior Design Project</h1>
+    <h1>Intrusion Detection System for Industrial Control Systems with a focus in passenger vehicles</h1>
+    <p><b>Description</b>: My senior design project is to design an Intrusion Detection System for the CAN Bus protocol that is used to send signals throughout passenger vehicles. The process for designing our IDS follows a few steps. First we must set up a CAN channel as a testbed where we will deploy our IDS, this is followed by introducing attack vectors to the environment for our IDS to detect, and lastly we test different aspects like efficiency and accuracy.
+      <br><br><b>Role</b>:  At the beginning, I am responsible for setting up the initial testbed using components that can emulate the CAN signals being sent in real vehicles. When it comes to the IDS, I have looked at typical CAN frames, both safe and malicious, to set up the rules the IDS will use when analyzing the frames that come in.
+      <br><br><b>Skills/Knowledge</b>: I learned a lot about how CAN works and it gave me an insight into Industrial Control Systems which I had little experience with prior to the project. I also had the chance to improve my Python programming skills when designing the IDS and got to use new libraries that can deal with CAN frames. Aside from technical skills, being able to work on an engineering problem with a group was a positive experience for learning more intrapersonal skills when dealing with group projects.
+      <br><br><b>Big Picture Contribution</b>: Our project aims to bring greater security to passenger vehicles that everyone drives today by alerting users and producers of any potential intrusions that may be happening within the systems of the vehicle.
+      </p>
+</div>
+
+<div id="projects" style="padding-left:15%; padding-right:15%">
+  <h1>Projects</h1>
+  <h2>CPRE 231 --- Network Security</h2>
+  <p><b>Description</b>: This project was the perfect recap of everything we had learned about security in the class at that point. This project was done in two steps, the first involved assessing a network of systems we were given and finding their security flaws. My job was to use what I had learned in the class and fix these flaws then take extra steps to increase the safety of the network I was given. After this, I had the chance to use tools to find vulnerabilities that other students had left in their systems and exploit those vulnerabilities using methods I learned in the labs.
+    <br><br><b>Role</b>: My role was as a system security analyst, where I was responsible for understanding the network I was given and having the knowledge on cyber security aspects to be able to make the changes necessary to prevent the system integrity from being violated. The second stage gave me experience in penetration testing, where I used tools to find and exploit vulnerabilities.
+    <br><br><b>Skills/Knowledge</b>: Through this project I got valuable experience in working with cyber security tools like metasploit and nmap as a few examples. I also learned about social engineering as that was one method to gain access to a system. Firewall rules and permissions were two focuses when enforcing my system that were valuable skills to learn.
+    </p>
+  <h2>CPRE 381 --- Processor Design</h2>
+  <p><b>Description</b>: The focus of this project was to design a processor that could execute plenty of assembly commands. The processor needed to be capable of doing math necessary for these commands as well as making actions in memory to store, move, or delete memory within the caches and storage. Each component within the processor was designed by my partner and I from the simple components of AND gates all the way up to complex adders.
+    <br><br><b>Role</b>: I was responsible for creating the high level design of the processor and this meant having a deep understanding of how the components work together and what signals need to go where. Along with high level design, I was also required to design half of the components necessary for our processor to properly function and execute all of the commands.
+    <br><br><b>Skills/Knowledge</b>: This project gave me a deeper understanding of the inner workings of computers and how assembly language is used to execute programs. I also learned VHDL for this project, which is a skill I would not have gotten to work with was it not for this class. This project also required a lot of debugging when testing different commands, so being able to learn better strategies and techniques for debugging is something I will continue to use while programming.
+    </p>
+  <h2>COM S 309 --- Auto Battler Game</h2>
+  <p><b>Description</b>: This group project was one of my first experiences with application development and programming with a team. Our team decided to create and auto battler game where two players would play against each other by creating a squad of characters which each have their own abilities and stats. Then using those stats they would face off and the winner of each round would get a point. Every round, each player can build upon their team in order to make it stronger in order to beat their opponent. Each player could create an account that would be saved in a database and their stats would accompany their account and could be viewed in game.
+    <br><br><b>Role</b>: My role for this project was front-end design and game functionality. This involved making sure our game would navigate correctly, look appealing, and that the game was playable. In order to make the game function correctly, I had to ensure teams could be properly sent to the server and it would receive the result of each game, as well as making sure each encounter between characters and their stats or abilities would work properly and execute in the correct order.
+    <br><br><b>Skills/Knowledge</b>: The biggest piece of knowledge that I gained was software development planning. Using gitlab and creating/resolving issues I better understood the planning and organization that is necessary for a project of this scale to stay on schedule and fulfill the requirements. This also greatly improved my skills programming with Java as I did many things I had not done before in that language, like making connections to the back-end of our project as well designing functional, attractive user interfaces.
+    </p>
+</div>
+
+<div id="work" style="padding-left:15%; padding-right:15%">
+  <h1>Internship</h1>
+  <h2>Wellmark Blue Cross and Blue Shield --- Cyber Security Intern</h2>
+  <p><b>Duties</b>: Created spear phishing emails to validate employee security awareness. Analyzed and triaged potential phishing emails submitted by employees. Designed and programmed webpages for user registration. Utilized Flask in python scripts for back-end work. Designed front-end webpages using HTML/CSS. Created dashboards using queries in the SIEM. Audited changes made to firewall rules.
+    <br><br><b>Skills/Knowledge</b>: Knowledge of Java, C, and Python. Experience with Linux operating systems. Webpage design with HTML/CSS. Basic database query knowledge. Microsoft Attack Simulator. Professional and ethical intern programs to improve skills in work place. 
+    <br><br><b>Evaluation</b>: At the end of the internship at Wellmark, each intern does a presentation about their experience there and the work they completed. After lots of practice and completing the presentation, the feedback I got from leadership whom attended all praised my work as not only being well done, but also important work that Wellmark will continue to utilize.
+  </p>
+</div>
+
+<div id="reflections" style="padding-left:15%; padding-right:15%">
+  <h1>Relections</h1>
+  <a href="cumulative.pdf" download>
+    <h2>Cumulative Reflection</h2>
+  </a>
+  <a href="gen_ed.pdf" download>
+    <h2>General Education Reflection</h2>
+  </a>
+</div>
+
+<div id="ethics">
+  <h1>Ethics</h1>
+  <a href="ethics.pdf" download>
+    <h2>Ethics Paper</h2>
+  </a>
+</div>
+
+<div id="resume">
+  <a href="Cose_Resume_2023.pdf" download>
+    <h1>Resume</h1>
+  </a>
+</div>
+</center>
+</body>
+</html>
